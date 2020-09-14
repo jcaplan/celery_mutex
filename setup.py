@@ -6,12 +6,6 @@ import os
 import setuptools
 
 
-def read(*parts):
-    '''Read external file.'''
-    here = os.path.abspath(os.path.dirname(__file__))
-    return codecs.open(os.path.join(here, *parts), 'r').read()
-
-
 setuptools.setup(
     name='celery_mutex',
     version='0.1.0',
@@ -30,7 +24,6 @@ setuptools.setup(
     author='Lewis Franklin',
     author_email='lewis.franklin@gmail.com',
     description='Mutex for Celery tasks, which can be refined.',
-    long_description=read('README.md'),
     keywords='Celery tasks mutex',
     platforms='any',
     url='https://github.com/brolewis/celery_mutex',
